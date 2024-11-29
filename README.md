@@ -16,6 +16,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
   - [Nature Emojis](#nature-emojis)
   - [People Emojis](#people-emojis)
   - [How to Use](#how-to-use)
+    - [Improvements Implemented:](#improvements-implemented)
 
 ---
 
@@ -329,5 +330,13 @@ This guide contains a categorized list of emojis and their corresponding markdow
 ## How to Use
 To use any emoji, simply copy the markdown code and paste it where you'd like the emoji to appear in your text or project.
 
+---
+
+### Improvements Implemented:
+1. **Categorization**: Divided emojis into logical categories.
+2. **Collapsible Sections**: Used `<details>` tags for a clean look.
+3. **Interactive Copy**: Suggested JavaScript functionality for copying emoji codes.
+4. **Optional Features**: Added room for dynamic enhancements like emoji pickers.
+5. **To be continued!
 ---
 
