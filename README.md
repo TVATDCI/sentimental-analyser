@@ -35,7 +35,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ## Objects Emojis
 <details>
-<summery>Click to expand</summery>
+<summary>Click to expand</summary>
 
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
@@ -133,7 +133,8 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ## Places Emojis
 <details>
-<summery>Click to expand</summery>
+<summary>Click to expand</summary>
+
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :house: `:house:` | :house_with_garden: `:house_with_garden:` | :school: `:school:` |
@@ -178,7 +179,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ## Symbols Emojis
 <details>
-<summery>Click to expand</summery>
+<summary>Click to expand</summary>
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :one: `:one:` | :two: `:two:` | :three: `:three:` |
