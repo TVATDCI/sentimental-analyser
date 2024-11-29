@@ -1,9 +1,13 @@
-# Emoji Reference Guide
+# Sentiment Analyzer  
 
+The idea is to create a Sentimental analysis component (for fun) with reusable EmojiButton component that displays an emoji and copies a corresponding code to the clipboard when clicked. The code snippet demonstrates how to use the EmojiButton component in the App component by passing the emoji and code props to it. The EmojiButton component handles the click event by copying the code to the clipboard and displaying an alert message. This allows users to easily copy emoji codes by clicking on the corresponding buttons.
+
+## Emoji Reference Guide
 This guide contains a categorized list of emojis and their corresponding markdown codes. Use this as a quick reference for your projects or applications.
 
 ## Table of Contents
-- [Emoji Reference Guide](#emoji-reference-guide)
+- [Sentiment Analyzer](#sentiment-analyzer)
+  - [Emoji Reference Guide](#emoji-reference-guide)
   - [Table of Contents](#table-of-contents)
   - [Weather Emojis](#weather-emojis)
   - [Objects](#objects)
