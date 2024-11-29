@@ -12,7 +12,6 @@ This guide contains a categorized list of emojis and their corresponding markdow
   - [Nature](#nature)
   - [People Emojis](#people-emojis)
   - [How to Use](#how-to-use)
-  - [Interactive Copy (Optional)](#interactive-copy-optional)
 
 ---
 
@@ -385,14 +384,3 @@ To use any emoji, simply copy the markdown code and paste it where you'd like th
 
 ---
 
-## Interactive Copy (Optional)
-For an interactive experience, consider adding a web-based emoji picker or a script like below to allow users to copy the emoji code:
-
-```html
-<script>
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(() => {
-    alert(`Copied: ${text}`);
-  });
-}
-</script>
