@@ -1,19 +1,17 @@
 import React from 'react';
-import './App.css';
 import EmojiButton from './components/EmojiButton';
+import emojiData from './components/emojiData';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Emoji Picker</h1>
-      <div>
-        <EmojiButton emoji="😀" code=":smile:" />
-        <EmojiButton emoji="😎" code=":sunglasses:" />
-        <EmojiButton emoji="😂" code=":joy:" />
-        {/* Add more EmojiButton components as needed */}
-      </div>
-      </header>
+    <div className='App-header' >
+      <h1>Emoji Copy</h1>
+      <div className='btnContainer' >
+        {emojiData.map(({ emoji, code }) => (
+          <EmojiButton key={code} emoji={emoji} code={code} />
+        ))}
+        </div>
     </div>
   );
 }

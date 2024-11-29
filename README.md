@@ -14,7 +14,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
   - [Places](#places)
   - [Symbols](#symbols)
   - [Nature](#nature)
-  - [People Emojis](#people-emojis)
+  - [People](#people)
   - [How to Use](#how-to-use)
 
 ---
@@ -307,7 +307,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## People Emojis
+## People
 <details>
 <summary>Click to expand</summary>
 
