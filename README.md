@@ -9,7 +9,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
   - [Objects](#objects)
   - [Places](#places)
   - [Symbols](#symbols)
-  - [Nature Emojis](#nature-emojis)
+  - [Nature](#nature)
   - [People Emojis](#people-emojis)
   - [How to Use](#how-to-use)
   - [Interactive Copy (Optional)](#interactive-copy-optional)
@@ -34,6 +34,8 @@ This guide contains a categorized list of emojis and their corresponding markdow
 <details>
 <summery>Click to expand</summery>
 
+| Emoji | Code | Emoji | Code | Emoji | Code |
+|---|---|---|---|---|---|
 | :bamboo: `:bamboo:` | :gift_heart: `:gift_heart:` | :dolls: `:dolls:` |
 |---|---|---|
 | :school_satchel: `:school_satchel:` | :mortar_board: `:mortar_board:` | :flags: `:flags:` |
@@ -129,7 +131,10 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ## Places
 <details>
+
 <summery>Click to expand</summery>
+| Emoji | Code | Emoji | Code | Emoji | Code |
+|---|---|---|---|---|---|
 | :house: `:house:` | :house_with_garden: `:house_with_garden:` | :school: `:school:` |
 |---|---|---|
 | :office: `:office:` | :post_office: `:post_office:` | :hospital: `:hospital:` |
@@ -173,7 +178,10 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ## Symbols
 <details>
+
 <summery>Click to expand</summery>
+| Emoji | Code | Emoji | Code | Emoji | Code |
+|---|---|---|---|---|---|
 | :one: `:one:` | :two: `:two:` | :three: `:three:` |
 |---|---|---|
 | :four: `:four:` | :five: `:five:` | :six: `:six:` |
@@ -245,10 +253,12 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## Nature Emojis
+## Nature
 <details>
-<summary>Click to expand</summary>
 
+<summary>Click to expand</summary>
+| Emoji | Code | Emoji | Code | Emoji | Code |
+|---|---|---|---|---|---|
 | :sunny: `:sunny:` | :umbrella: `:umbrella:` | :cloud: `:cloud:` |
 |---|---|---|
 | :snowflake: `:snowflake:` | :snowman: `:snowman:` | :zap: `:zap:` |
