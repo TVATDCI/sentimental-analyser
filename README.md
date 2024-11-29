@@ -10,11 +10,11 @@ This guide contains a categorized list of emojis and their corresponding markdow
   - [Emoji Reference Guide](#emoji-reference-guide)
   - [Table of Contents](#table-of-contents)
   - [Weather Emojis](#weather-emojis)
-  - [Objects](#objects)
-  - [Places](#places)
-  - [Symbols](#symbols)
-  - [Nature](#nature)
-  - [People](#people)
+  - [Objects Emojis](#objects-emojis)
+  - [Places Emojis](#places-emojis)
+  - [Symbols Emojis](#symbols-emojis)
+  - [Nature Emojis](#nature-emojis)
+  - [People Emojis](#people-emojis)
   - [How to Use](#how-to-use)
 
 ---
@@ -33,14 +33,13 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## Objects
+## Objects Emojis
 <details>
 <summery>Click to expand</summery>
 
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :bamboo: `:bamboo:` | :gift_heart: `:gift_heart:` | :dolls: `:dolls:` |
-|---|---|---|
 | :school_satchel: `:school_satchel:` | :mortar_board: `:mortar_board:` | :flags: `:flags:` |
 | :fireworks: `:fireworks:` | :sparkler: `:sparkler:` | :wind_chime: `:wind_chime:` |
 | :rice_scene: `:rice_scene:` | :jack_o_lantern: `:jack_o_lantern:` | :ghost: `:ghost:` |
@@ -132,14 +131,12 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## Places
+## Places Emojis
 <details>
-
 <summery>Click to expand</summery>
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :house: `:house:` | :house_with_garden: `:house_with_garden:` | :school: `:school:` |
-|---|---|---|
 | :office: `:office:` | :post_office: `:post_office:` | :hospital: `:hospital:` |
 | :bank: `:bank:` | :convenience_store: `:convenience_store:` | :love_hotel: `:love_hotel:` |
 | :hotel: `:hotel:` | :wedding: `:wedding:` | :church: `:church:` |
@@ -179,14 +176,12 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## Symbols
+## Symbols Emojis
 <details>
-
 <summery>Click to expand</summery>
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :one: `:one:` | :two: `:two:` | :three: `:three:` |
-|---|---|---|
 | :four: `:four:` | :five: `:five:` | :six: `:six:` |
 | :seven: `:seven:` | :eight: `:eight:` | :nine: `:nine:` |
 | :keycap_ten: `:keycap_ten:` | :1234: `:1234:` | :zero: `:zero:` |
@@ -256,14 +251,12 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## Nature
+## Nature Emojis
 <details>
-
 <summary>Click to expand</summary>
 | Emoji | Code | Emoji | Code | Emoji | Code |
 |---|---|---|---|---|---|
 | :sunny: `:sunny:` | :umbrella: `:umbrella:` | :cloud: `:cloud:` |
-|---|---|---|
 | :snowflake: `:snowflake:` | :snowman: `:snowman:` | :zap: `:zap:` |
 | :cyclone: `:cyclone:` | :foggy: `:foggy:` | :ocean: `:ocean:` |
 | :cat: `:cat:` | :dog: `:dog:` | :mouse: `:mouse:` |
@@ -307,7 +300,7 @@ This guide contains a categorized list of emojis and their corresponding markdow
 
 ---
 
-## People
+## People Emojis
 <details>
 <summary>Click to expand</summary>
 
