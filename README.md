@@ -1,4 +1,4 @@
-# Emoji Copy - Sentiment Analyzer
+# Copy emoji-to-go
 
 A React-based web application that allows users to browse and copy emoji shortcodes to the clipboard with a single click. Perfect for developers and content creators who use emoji codes in markdown, GitHub READMEs, or any platform that supports emoji shortcodes.
 
@@ -77,6 +77,7 @@ Build output will be in the `build/` directory.
 ### Finding Specific Emojis
 
 Use the **search bar** at the top of the page:
+
 - Type in the search box (e.g., "heart", "smile", or the shortcode)
 - Results filter in real-time across ALL categories
 - Click on any result to copy it
@@ -86,16 +87,19 @@ Use the **search bar** at the top of the page:
 Once copied, you can use the emoji code in:
 
 **GitHub/Markdown:**
+
 ```markdown
 Feeling :smile: today!
 ```
 
 **Slack (with colon shortcuts):**
+
 ```
 :type the shortcode between colons:
 ```
 
 **Discord:**
+
 ```
 ::smile::
 ```
@@ -133,11 +137,13 @@ sentimental-analyser/
 This project uses `.js` extension for React components instead of `.jsx`. Here's why:
 
 **It's purely a naming convention:**
+
 - React doesn't require the `.jsx` extension - it works with plain `.js` files
 - `.jsx` is optional syntax indicating "this file contains JSX (XML-like JavaScript)"
 - Create React App defaults to `.js` files, which is why you see `App.js` instead of `App.jsx`
 
 **Both approaches work identically:**
+
 ```javascript
 // App.js - works fine
 // App.jsx - also works fine
@@ -151,19 +157,22 @@ You can rename files to `.jsx` if you prefer that convention, but there's no req
 The `public/index.html` file is the **entry point** that React mounts into. Here's the connection flow:
 
 **1. The HTML Template (`public/index.html`):**
+
 - Line 31: `<div id="root"></div>` - This empty div is where React will render the app
 - The `id="root"` matches the selector in React code
 
 **2. The React Entry Point (`src/index.js`):**
-```javascript
-import ReactDOM from 'react-dom/client';
-import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+```javascript
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 ```
 
 **The flow:**
+
 1. Browser loads `index.html`
 2. Finds `<div id="root"></div>`
 3. React takes that div and inserts the `<App />` component into it
@@ -171,14 +180,14 @@ root.render(<App />);
 
 **Key elements in index.html:**
 
-| Line | Purpose |
-|------|---------|
-| 4 | `<meta charset="utf-8" />` - Supports all emoji characters |
-| 6 | `<meta name="viewport" ...>` - Responsive design |
-| 27 | `<title>React App</title>` - Browser tab title |
-| 30 | `<noscript>` - Message for users without JS |
-| 31 | `<div id="root"></div>` - React mounts here |
-| 17 | `<link rel="manifest">` - PWA support |
+| Line | Purpose                                                    |
+| ---- | ---------------------------------------------------------- |
+| 4    | `<meta charset="utf-8" />` - Supports all emoji characters |
+| 6    | `<meta name="viewport" ...>` - Responsive design           |
+| 27   | `<title>React App</title>` - Browser tab title             |
+| 30   | `<noscript>` - Message for users without JS                |
+| 31   | `<div id="root"></div>` - React mounts here                |
+| 17   | `<link rel="manifest">` - PWA support                      |
 
 ---
 
@@ -189,19 +198,17 @@ root.render(<App />);
 Renders a single clickable emoji button.
 
 **Props:**
-| Prop | Type | Description |
-|------|------|-------------|
-| `emoji` | string | The emoji character to display |
-| `code` | string | The shortcode (e.g., `:smile:`) |
+
+| Prop     | Type     | Description                            |
+| -------- | -------- | -------------------------------------- |
+| `emoji`  | string   | The emoji character to display         |
+| `code`   | string   | The shortcode (e.g., `:smile:`)        |
 | `onCopy` | function | Optional callback when emoji is copied |
 
 **Usage:**
+
 ```jsx
-<EmojiButton 
-  emoji="😄" 
-  code=":smile:" 
-  onCopy={(code) => console.log(code)} 
-/>
+<EmojiButton emoji="😄" code=":smile:" onCopy={(code) => console.log(code)} />
 ```
 
 ### Sidebar
@@ -209,17 +216,16 @@ Renders a single clickable emoji button.
 Accordion-style category navigation component.
 
 **Props:**
-| Prop | Type | Description |
-|------|------|-------------|
-| `activeCategory` | string | Currently selected category |
+
+| Prop               | Type     | Description                    |
+| ------------------ | -------- | ------------------------------ |
+| `activeCategory`   | string   | Currently selected category    |
 | `onCategoryChange` | function | Callback when category changes |
 
 **Usage:**
+
 ```jsx
-<Sidebar 
-  activeCategory="people"
-  onCategoryChange={(cat) => setCategory(cat)}
-/>
+<Sidebar activeCategory="people" onCategoryChange={(cat) => setCategory(cat)} />
 ```
 
 ### SearchBar
@@ -227,17 +233,16 @@ Accordion-style category navigation component.
 Global search input for filtering emojis.
 
 **Props:**
-| Prop | Type | Description |
-|------|------|-------------|
-| `searchQuery` | string | Current search input value |
+
+| Prop             | Type     | Description                        |
+| ---------------- | -------- | ---------------------------------- |
+| `searchQuery`    | string   | Current search input value         |
 | `onSearchChange` | function | Callback when search input changes |
 
 **Usage:**
+
 ```jsx
-<SearchBar 
-  searchQuery={query}
-  onSearchChange={setQuery}
-/>
+<SearchBar searchQuery={query} onSearchChange={setQuery} />
 ```
 
 ### Toast
@@ -245,18 +250,20 @@ Global search input for filtering emojis.
 Notification component that displays copy confirmation.
 
 **Props:**
-| Prop | Type | Description |
-|------|------|-------------|
-| `message` | string | Notification message text |
-| `isVisible` | boolean | Whether toast is visible |
-| `onClose` | function | Callback to close toast |
-| `duration` | number | Auto-close timeout (default: 2000ms) |
+
+| Prop        | Type     | Description                          |
+| ----------- | -------- | ------------------------------------ |
+| `message`   | string   | Notification message text            |
+| `isVisible` | boolean  | Whether toast is visible             |
+| `onClose`   | function | Callback to close toast              |
+| `duration`  | number   | Auto-close timeout (default: 2000ms) |
 
 **Usage:**
+
 ```jsx
-<Toast 
-  message="Copied: :smile:" 
-  isVisible={true} 
+<Toast
+  message="Copied: :smile:"
+  isVisible={true}
   onClose={() => setVisible(false)}
 />
 ```
@@ -266,18 +273,20 @@ Notification component that displays copy confirmation.
 Contains all emoji data organized by category.
 
 **Exports:**
-| Export | Type | Description |
-|--------|------|-------------|
-| `people` | array | People/category emojis |
-| `weather` | array | Weather emojis |
-| `places` | array | Places/travel emojis |
-| `nature` | array | Nature/animal emojis |
-| `objects` | array | Objects/items emojis |
-| `symbols` | array | Symbols characters |
-| `categories` | object | All categories combined |
+
+| Export           | Type   | Description                   |
+| ---------------- | ------ | ----------------------------- |
+| `people`         | array  | People/category emojis        |
+| `weather`        | array  | Weather emojis                |
+| `places`         | array  | Places/travel emojis          |
+| `nature`         | array  | Nature/animal emojis          |
+| `objects`        | array  | Objects/items emojis          |
+| `symbols`        | array  | Symbols characters            |
+| `categories`     | object | All categories combined       |
 | `categoryLabels` | object | Display labels for categories |
 
 **Emoji Object Structure:**
+
 ```javascript
 {
   emoji: "😄",    // The display emoji
@@ -286,8 +295,9 @@ Contains all emoji data organized by category.
 ```
 
 **Usage:**
+
 ```javascript
-import { categories, categoryLabels, people } from './emojiData';
+import { categories, categoryLabels, people } from "./emojiData";
 
 // Get all emojis from a category
 const peopleEmojis = people;
@@ -302,14 +312,14 @@ const labels = categoryLabels;
 
 ## Emoji Categories
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| People | ~200 | Faces, emotions, hearts, gestures |
-| Weather | 9 | Sun, rain, snow, clouds |
-| Places | ~120 | Buildings, vehicles, flags |
-| Nature | ~110 | Animals, plants, celestial |
-| Objects | ~260 | Items, food, activities |
-| Symbols | ~80 | Numbers, arrows, signs |
+| Category | Count | Description                       |
+| -------- | ----- | --------------------------------- |
+| People   | ~200  | Faces, emotions, hearts, gestures |
+| Weather  | 9     | Sun, rain, snow, clouds           |
+| Places   | ~120  | Buildings, vehicles, flags        |
+| Nature   | ~110  | Animals, plants, celestial        |
+| Objects  | ~260  | Items, food, activities           |
+| Symbols  | ~80   | Numbers, arrows, signs            |
 
 ---
 
@@ -336,7 +346,7 @@ To add new emojis, edit `src/components/emojiData.js`:
 ```javascript
 export const people = [
   // existing emojis...
-  { emoji: "🆕", code: ":new_emoji:" },  // Add here
+  { emoji: "🆕", code: ":new_emoji:" }, // Add here
 ];
 ```
 
