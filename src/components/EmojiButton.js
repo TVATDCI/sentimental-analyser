@@ -1,12 +1,12 @@
-// Version: 2
 import React from 'react';
 
-function EmojiButton({ emoji, code }) {
+function EmojiButton({ emoji, code, onCopy }) {
   const handleClick = () => {
     navigator.clipboard.writeText(code)
       .then(() => {
-        console.log(`Copied: ${code}`);
-        alert(`Copied to clipboard: ${code}`); // Optional feedback
+        if (onCopy) {
+          onCopy(code);
+        }
       })
       .catch(err => {
         console.error('Failed to copy text: ', err);
@@ -15,31 +15,13 @@ function EmojiButton({ emoji, code }) {
 
   return (
     <button
+      className="emoji-button"
       onClick={handleClick}
+      title={`Copy ${code}`}
     >
-      {emoji} 
+      {emoji}
     </button>
   );
 }
 
 export default EmojiButton;
-
-{/*version 1
-    import React from 'react';
-
-const EmojiButton = ({ emoji, code }) => {
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(code).then(() => {
-      alert(`Copied: ${code}`);
-    });
-  };
-
-  return (
-    <button onClick={copyToClipboard} style={{ margin: '5px' }}>
-      {emoji} Copy
-    </button>
-  );
-};
-
-export default EmojiButton;
-*/}
