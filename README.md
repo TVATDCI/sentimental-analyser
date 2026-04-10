@@ -8,6 +8,9 @@ A React-based web application that allows users to browse and copy emoji shortco
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
 - [Project Structure](#project-structure)
+- [Technical Explanations](#technical-explanations)
+  - [Why App.js (not App.jsx)?](#why-appjs-not-appjsx)
+  - [How public/index.html is Connected](#how-publicindexhtml-is-connected)
 - [Component Overview](#component-overview)
 - [Emoji Categories](#emoji-categories)
 - [Development](#development)
@@ -120,6 +123,62 @@ sentimental-analyser/
 ├── package.json
 └── README.md
 ```
+
+---
+
+## Technical Explanations
+
+### Why App.js (not App.jsx)?
+
+This project uses `.js` extension for React components instead of `.jsx`. Here's why:
+
+**It's purely a naming convention:**
+- React doesn't require the `.jsx` extension - it works with plain `.js` files
+- `.jsx` is optional syntax indicating "this file contains JSX (XML-like JavaScript)"
+- Create React App defaults to `.js` files, which is why you see `App.js` instead of `App.jsx`
+
+**Both approaches work identically:**
+```javascript
+// App.js - works fine
+// App.jsx - also works fine
+// No functional difference
+```
+
+You can rename files to `.jsx` if you prefer that convention, but there's no requirement to do so.
+
+### How public/index.html is Connected
+
+The `public/index.html` file is the **entry point** that React mounts into. Here's the connection flow:
+
+**1. The HTML Template (`public/index.html`):**
+- Line 31: `<div id="root"></div>` - This empty div is where React will render the app
+- The `id="root"` matches the selector in React code
+
+**2. The React Entry Point (`src/index.js`):**
+```javascript
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
+**The flow:**
+1. Browser loads `index.html`
+2. Finds `<div id="root"></div>`
+3. React takes that div and inserts the `<App />` component into it
+4. Your app renders inside that div
+
+**Key elements in index.html:**
+
+| Line | Purpose |
+|------|---------|
+| 4 | `<meta charset="utf-8" />` - Supports all emoji characters |
+| 6 | `<meta name="viewport" ...>` - Responsive design |
+| 27 | `<title>React App</title>` - Browser tab title |
+| 30 | `<noscript>` - Message for users without JS |
+| 31 | `<div id="root"></div>` - React mounts here |
+| 17 | `<link rel="manifest">` - PWA support |
 
 ---
 
